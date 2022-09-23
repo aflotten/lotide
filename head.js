@@ -6,9 +6,10 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-const head = function(ourArray) {
-  for (let i = 0; i < ourArray.length; i++) {
-    return ourArray[i]; //return entire array
+const head = function(array) {
+  if (array.length === 0) { //used length property to establish if array is empty or not
+    return undefined; 
+  } else {
+    return array[0];
   }
-  return ourArray[0]; //return first element for assertEqual function
 };
