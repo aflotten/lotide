@@ -8,7 +8,7 @@ const assertEqual = function(actual, expected) {
 
 const head = function(array) {
   if (array.length === 0) { //used length property to establish if array is empty or not
-    return undefined; 
+    return undefined;
   } else {
     return array[0];
   }

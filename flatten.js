@@ -22,7 +22,7 @@ const assertEqual = function(actual, expected) {
 const flatten = function(array) {
   let outcome = [];
   for (let i = 0; i < array.length; i++) {
-    if (!Array.isArray(array[i])) { //use !Array to determine if value is array
+    if (!Array.isArray(array[i])) { //use !Array to determine if element value is array
       outcome.push(array[i]); //pushes these arrays to outcome
     }
     else {
