@@ -13,19 +13,13 @@ const eqArrays = function(array1, array2) {
       return false, `🛑🛑🛑 Assertion failed: These arrays do not match!`;
     }
   }
-  
   return true, `✅✅✅ Assertion passed: These arrays match!`;
 };
 
-
-
-
-
-
 const letterPositions = function(sentence) {
   const results = {};
-  sentence = sentence.replace(" ","") //remove spaces
-  for(let i = 0; i < sentence.length; i++) {
+  for (let i = 0; i < sentence.length; i++) {
+    sentence = sentence.replace(" ",""); //remove spaces
     if (!results[sentence[i]]) { //use ! to determine if we haven't seen the character yet
       results[sentence[i]] = [i]; //push the index of our character location to the results object
     } else {
@@ -34,3 +28,5 @@ const letterPositions = function(sentence) {
   }
   return results;
 };
+
+console.log(letterPositions("Lighthouse labs is the shiz"));
