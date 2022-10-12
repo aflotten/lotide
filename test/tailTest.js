@@ -1,5 +1,5 @@
-const assertEqual = require("../assertEqual");
+const assertArraysEqual = require("../assertArraysEqual");
 const tail = require("../tail");
 
-const array = [1, 2 ,3, 4, 5];
-console.log(assertEqual(tail(array), [2, 3, 4, 5]));
+const array = [1, 2];
+console.log(assertArraysEqual(tail(array), [2]));
