@@ -1,9 +1,9 @@
-const takeUntil = function(array, callback) {
+const takeUntil = (array, callback) => {
   let result = [];
 
   for (const item of array) {
-    const good = callback(item); // callback to tell us when something is truthy
-    if (!good) { //!good (if not good) push to array, else (if truthy) break
+    const good = callback(item);
+    if (!good) {
       result.push(item);
     } else {
       break;

@@ -16,7 +16,7 @@ const eqArrays = function(array1, array2) {
   return true, `✅✅✅ Assertion passed: These arrays match!`;
 };
 
-const letterPositions = function(sentence) {
+const letterPositions = (sentence) => {
   const results = {};
   for (let i = 0; i < sentence.length; i++) {
     sentence = sentence.replace(" ","");

@@ -19,7 +19,7 @@ const assertEqual = function(actual, expected) {
 
 
 
-const flatten = function(array) {
+const flatten = (array) => {
   let outcome = [];
   for (let i = 0; i < array.length; i++) {
     if (!Array.isArray(array[i])) { //use !Array to determine if element value is not an array
