@@ -20,3 +20,5 @@ const countLetters = function(sentence) {
   }
   return count;
 };
+
+module.exports = countLetters;

@@ -19,14 +19,14 @@ const eqArrays = function(array1, array2) {
 const letterPositions = function(sentence) {
   const results = {};
   for (let i = 0; i < sentence.length; i++) {
-    sentence = sentence.replace(" ",""); //remove spaces
-    if (!results[sentence[i]]) { //use ! to determine if we haven't seen the character yet
-      results[sentence[i]] = [i]; //push the index of our character location to the results object
+    sentence = sentence.replace(" ","");
+    if (!results[sentence[i]]) {
+      results[sentence[i]] = [i];
     } else {
-      results[sentence[i]].push(i); //if we have seen it, push the index of the next appearance to the same key. 
+      results[sentence[i]].push(i);
     }
   }
   return results;
 };
 
-console.log(letterPositions("Lighthouse labs is the shiz"));
+module.exports = letterPositions;
