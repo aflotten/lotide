@@ -1,8 +1,14 @@
-const assertArraysEqual = require("../assertArraysEqual")
+const eqArrays = require("../eqArrays");
 const middle = require("../middle");
+const assert = require("chai").assert;
 
-const array1 = [1, 2, 3, 4, 5];
-const array2 = [1, 2, 3, 4, 5, 6];
+describe("#middle", () => {
+  it("should return the value at the middle index of an odd number length array ", () => {
+    assert.isTrue(eqArrays(middle([1, 2, 3]), [2]));
+  });
 
-console.log(assertArraysEqual(middle(array1), [3]));
-console.log(assertArraysEqual(middle(array2), [3, 4]));
+  it("should return two values at the middle indexs of an even number length array ", () => {
+    assert.isTrue(eqArrays(middle([1, 2, 3, 4, 5, 6]), [3, 4]));
+  });
+
+});
