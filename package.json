@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@aflotten/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "A function library inspired by Lodash, that contains many useful functions and assertions.",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/aflotten/lotide.git"
   },
-  "author": "",
+  "author": "@aflotten",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/aflotten/lotide/issues"
